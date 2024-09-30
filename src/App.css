@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+}
+
+.App {
+  min-height: 100vh;
+  background-color: black;
+}
+
+.DeckContainer {
+  margin: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.Colours {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.Colours > img {
+  height: 23px;
+  object-fit: scale-down;
+  margin: 2px;
+}
+
+img {
+  object-fit: cover;
+  height: inherit;
+  width: inherit;
+}
+
+.Box {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  display: flex;
+  transition: transform .2s;
+  margin: 5px;
+}
+
+.BackImg {
+  height: inherit;
+  width: inherit;
+  display: flex;
+}
+
+.Box:hover {
+  transform: scale(1.1);
+  z-index: 500;
+}
+
+.Bounding {
+  position: absolute;
+  top: 0;
+  height: inherit;
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  color: white;
+  text-shadow:2px 0 0 black,0 2px 0 black,-2px 0 0 black,0 -2px 0 black;
+  margin-top: -25px;
+}
+
+h2 {
+  color: white;
+  text-shadow:2px 0 0 black,0 2px 0 black,-2px 0 0 black,0 -2px 0 black;
+}
+
+h3 {
+  color: white;
+  text-shadow:2px 0 0 black,0 2px 0 black,-2px 0 0 black,0 -2px 0 black;
+}
+
+p {
+  font-size: 20px;
+  color: white;
+  text-shadow:2px 0 0 black,0 2px 0 black,-2px 0 0 black,0 -2px 0 black;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+a {
+  height:inherit;
+  width:inherit;
+}
+
+.clickable {
+  position: absolute;
+  top: 0;
+  height: inherit;
+  width: inherit;
+  display:flex;
+  flex-direction: column;
+  opacity: 0;
+}
+.clickable:hover {
+  opacity: 0.1;
+}
+
+.buffer {
+  height: 30px;
+}
+
+.Display {
+  height: 400px;
+  position: relative;
+}
+
+button {
+  width: 250px;
+  height: 50px;
+}
