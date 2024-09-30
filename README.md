@@ -1,70 +1,13 @@
-# Getting Started with Create React App
+Important Note: I haven't worked on this project since maybe 2022, with no major changes since 2021. I'm uploading it now as part of an effort to catalogue and clean up some of my old projects, or at least save it for posterity. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Magic: the Gathering Decklist display
+My friends and I used to play a lot of Magic, especially using online services like Untap.io. Untap only allows free users to store 10 decks in-app, if you want to add more you have to either pay or delete some to make space. The obvious solution is to have a series of text files that can be pasted into Untap's "Import" feature as needed. 
 
-## Available Scripts
+But I wanted something fancier, and I wanted to impress my friends with my web dev skills. So I made an app to display a list of the decks I used, along with some pre-constructed beginner decks and (later) some of my friends' decks. 
 
-In the project directory, you can run:
+Decks are split into categories, and display a title, brief description, and colour identity. Clicking on a deck shows copy-able text fields that can be used to import into Untap. 
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## What I might do in future
+This entire app is a quick-and-dirty solution to a problem that doesn't really exist. But I might do some updates if I feel like it. 
+1. Actual Database support. When I made this I just pasted everything into a huge JSON file, but adding a database and the ability to actually add/remove/edit decks might be a fun project. 
+2. Image URL caching/saving. The individual deck pages show a display card for that deck - e.g. a commander, main planeswalker, etc. At the moment, the app uses the Scryfall API to look up information about the card, then discards everything but the card image URI, which it uses to display the card image. If you select the same deck three times, it makes three API calls. It would be much better to cache this somehow and avoid the excess calls. 
