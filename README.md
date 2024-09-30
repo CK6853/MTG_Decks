@@ -1,6 +1,6 @@
 Important Note: I haven't worked on this project since maybe 2022, with no major changes since 2021. I'm uploading it now as part of an effort to catalogue and clean up some of my old projects, or at least save it for posterity. 
 
-# Magic: the Gathering Decklist display
+# Magic: the Gathering Decklist Display
 My friends and I used to play a lot of Magic, especially using online services like Untap.io. Untap only allows free users to store 10 decks in-app, if you want to add more you have to either pay or delete some to make space. The obvious solution is to have a series of text files that can be pasted into Untap's "Import" feature as needed. 
 
 But I wanted something fancier, and I wanted to impress my friends with my web dev skills. So I made an app to display a list of the decks I used, along with some pre-constructed beginner decks and (later) some of my friends' decks. 
