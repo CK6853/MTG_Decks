@@ -6,7 +6,7 @@ My friends and I used to play a lot of Magic, especially using online services l
 But I wanted something fancier, and I wanted to impress my friends with my web dev skills. So I made an app to display a list of the decks I used, along with some pre-constructed beginner decks and (later) some of my friends' decks. Decks are split into categories, and display a title, brief description, and colour identity. There's a fun growth animation when you hover over them, because I felt like it. 
 ![Main](docs/screenshots/Main_Display.png)
 
-Clicking on a deck shows copy-able text fields that can be used to import into Untap. 
+Clicking on a deck shows an API-fetched image of important cards e.g. commanders, and copy-able text fields that can be used to import into Untap. 
 ![Deck](docs/screenshots/Deck_Display.png)
 
 ## What I might do in future
