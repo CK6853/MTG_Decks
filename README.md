@@ -4,10 +4,10 @@ Important Note: I haven't worked on this project since maybe 2022, with no major
 My friends and I used to play a lot of Magic, especially using online services like Untap.io. Untap only allows free users to store 10 decks in-app, if you want to add more you have to either pay or delete some to make space. The obvious solution is to have a series of text files that can be pasted into Untap's "Import" feature as needed. 
 
 But I wanted something fancier, and I wanted to impress my friends with my web dev skills. So I made an app to display a list of the decks I used, along with some pre-constructed beginner decks and (later) some of my friends' decks. Decks are split into categories, and display a title, brief description, and colour identity. There's a fun growth animation when you hover over them, because I felt like it. 
-![Main](docs/screenshots/Main Display.png)
+![Main](docs/screenshots/Main_Display.png)
 
 Clicking on a deck shows copy-able text fields that can be used to import into Untap. 
-![Deck](docs/screenshots/Deck Display.png)
+![Deck](docs/screenshots/Deck_Display.png)
 
 ## What I might do in future
 This entire app is a quick-and-dirty solution to a problem that doesn't really exist. But I might do some updates if I feel like it. 
